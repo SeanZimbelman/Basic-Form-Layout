@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="color:white; background-color: black;">
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Sean Zimbelman">
@@ -13,9 +13,116 @@
 
     <title></title>
     <link rel="shortcut icon" href="DR.png" type="image/x-i">
+    <style type="text/css">.fieldset-auto-width {display: inline-block;}</style>
 </head>
 
 <body>
-    
+    <form action="data.json" method="POST">
+        <fieldset class="fieldset-auto-width">
+            <legend>User Information</legend>
+            <em>
+                <ul>
+                    <li>
+                        <lable for="name">User Name</lable>
+                        <input type="text" id="name" name="user.name">
+                    </li>
+                    <li>
+                        <lable for="PW">Password</lable>
+                        <input type="password" id="PW" name="user.PW">
+                    </li>
+                </ul>
+            </em>
+        </fieldset>
+        <br>
+        <fieldset class="fieldset-auto-width">
+            <legend>What drink do you want?</legend>
+            <ul>
+                <li>
+                    <input type="radio" id="Coke" name="user.drink">
+                    <label for="Coke">Coke</label>
+                </li>
+                <li>
+                    <input type="radio" id="DietCoke" name="user.drink">
+                    <label for="DietCoke">Diet Coke</label>
+                </li>
+                <li>
+                    <input type="radio" id="Sprite" name="user.drink">
+                    <label for="Sprite">Sprite</label>
+                </li>
+                <li>
+                    <input type="radio" id="Diet Sprite" name="user.drink">
+                    <label for="Diet Sprite">Diet Sprite</label>
+                </li>
+                <li>
+                    <input type="radio" id="DrPepper" name="user.drink">
+                    <label for="DrPepper">Dr Pepper</label>
+                </li>
+                <li>
+                    <input type="radio" id="DietDrPepper" name="user.drink">
+                    <label for="DietDrPepper">Diet Dr Pepper</label>
+                </li>
+                <li>
+                    <input type="radio" id="Water" name="user.drink">
+                    <label for="Water">Water</label>
+                </li>
+            </ul>
+        </fieldset>
+        <br>
+        <fieldset class="fieldset-auto-width">
+            <legend>Pizza Preference</legend>
+            <ul>
+                <li>
+                    <input type="checkbox" id="Cheese" name="user.topping" value="Plain">
+                    <label for="Cheese">Cheese</label><br>
+                </li>
+                <li>
+                    <input type="checkbox" id="Pepperone" name="user.topping" value="Plain">
+                    <label for="Pepperone">Pepperone</label><br>
+                </li>
+                <li>
+                    <input type="checkbox" id="Chicken" name="user.topping" value="Plain">
+                    <label for="Chicken">Chicken</label><br>
+                </li>
+                <li>
+                    <input type="checkbox" id="Sausage" name="user.topping" value="Plain">
+                    <label for="Sausage">Sausage</label><br>
+                </li>
+                <li>
+                    <input type="checkbox" id="Chicken" name="user.topping" value="Plain">
+                    <label for="Chicken">Chicken</label><br>
+                </li>
+                <li>
+                    <input type="checkbox" id="Olives" name="user.topping" value="Plain">
+                    <label for="Olives">Olives</label><br>
+                </li>
+                <li>
+                    <input type="checkbox" id="Onions" name="user.topping" value="Plain">
+                    <label for="Onions">Onions</label><br>
+                </li>
+            </ul>
+        </fieldset>
+        <br>
+        <fieldset class="fieldset-auto-width">
+            <legend>Special Instructions</legend>
+            <ul>
+                <li>
+                    <lable for="Special">Special Instructions:</lable><br>
+                    <textarea name="user.spec" id="Special" cols="30" rows="10">Type here</textarea>
+                </li>
+            </ul>
+        </fieldset>
+        <br>
+        <fieldset class="fieldset-auto-width">
+            <legend>Email</legend>
+            <ul>
+                <li>
+                    <label for="email">Enter your email:</label>
+                    <input type="email" id="email" name="user.email">
+                </li>
+            </ul>
+        </fieldset>
+        <br>
+        <input type="image" src="Pizza.png" alt="Submit" style="float:left" width="48" height="48">
+    </form>
 </body>
 </html>
